@@ -1,13 +1,16 @@
 package vehicles;
 public class Hatchback extends FamilyVehicle{
 
-    public Hatchback(String brand, String license) {
-        super(brand, license);
+    public Hatchback(String brand, String license,String type) {
+        super(brand, license, type);
 
     }
 
     public String makeNoise (){
         return "BEP BEP!";
     }
-    public String familyVehicle()
+    @Override
+    public String familyVehicle(){
+        return "I am here with my family.";
+    }
 }

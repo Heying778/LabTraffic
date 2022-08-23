@@ -5,14 +5,16 @@ import interfacess.IVehicles;
 public abstract class FamilyVehicle implements IVehicles {
 
     private String brand;
+    public String type;
 
     private String license;
 
 
 
-    public FamilyVehicle(String brand, String license) {
+    public FamilyVehicle(String brand, String license, String type) {
         this.brand = brand;
         this.license = license;
+        this.type = type;
     }
 
     public String getBrand() {

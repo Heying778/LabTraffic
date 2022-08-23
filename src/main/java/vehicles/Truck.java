@@ -2,8 +2,8 @@ package vehicles;
 
 public class Truck extends OtherVehicle{
 
-    public Truck(String brand, String license) {
-        super(brand, license);
+    public Truck(String brand, String license,String type) {
+        super(brand, license, type);
 
     }
 

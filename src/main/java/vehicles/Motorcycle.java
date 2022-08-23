@@ -2,8 +2,8 @@ package vehicles;
 
 public class Motorcycle extends FamilyVehicle{
 
-    public Motorcycle(String brand, String license) {
-        super(brand, license);
+    public Motorcycle(String brand, String license,String type) {
+        super(brand, license, type);
 
     }
 
