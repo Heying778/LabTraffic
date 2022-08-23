@@ -13,7 +13,7 @@ public class Floor {
 
     public Floor(int floor) {
         this.floor = floor;
-        this.vehicles1 = this.vehicles1.add(vehicles1,vehicles2);
+        this.vehicles1 = this.vehicles1.add(vehicles1, vehicles2);
     }
 
     public int getFloor() {
@@ -32,7 +32,10 @@ public class Floor {
         this.vehicles = vehicles;
     }
 
-    public int countAnimals(){
+    public int countAnimals() {
         return this.vehicles.size();
     }
+
+
+    
 }
