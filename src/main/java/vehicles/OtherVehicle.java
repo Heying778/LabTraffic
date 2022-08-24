@@ -3,11 +3,17 @@ package vehicles;
 import interfacess.IVehicles;
 
 public abstract class OtherVehicle extends Vehicle {
-    public String type;
+    public int type;
 
-    public OtherVehicle(String brand, String license,String type) {
+    public OtherVehicle(String brand, String license,int type) {
         super(brand, license);
-        this.type = "Other";
+        this.type = 1;
+    }
+    public String getType() {
+        if (this.type == 1) {
+            return "this is an Other Vehicle.";
+        }
+        return null;
     }
 
     @Override
