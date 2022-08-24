@@ -2,40 +2,24 @@ package vehicles;
 
 import interfacess.IVehicles;
 
-public abstract class FamilyVehicle implements IVehicles {
+public abstract class FamilyVehicle extends Vehicle {
 
-    private String brand;
-    public String type;
+    private String type;
+    public FamilyVehicle(String brand, String license,String type) {
+        super(brand, license);
+        this.type = "Family";
+    }
+    public String getType() {
+        return this.type;
+    }
 
-    private String license;
-
-
-
-    public FamilyVehicle(String brand, String license, String type) {
-        this.brand = brand;
-        this.license = license;
+    public void setType(String type) {
         this.type = type;
     }
 
-    public String getBrand() {
-        return brand;
-    }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-
-    public String getLicence() {
-        return this.license;
-    }
-
-    public void setLicense(String license) {
-        this.license = license;
-    }
-
-    public abstract String makeNoise();
-
-    public String familyVehicle(){
+    @Override
+    public String makeNoise(){
         return "We travel as a family.";
     }
 

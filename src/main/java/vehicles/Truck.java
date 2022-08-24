@@ -6,12 +6,11 @@ public class Truck extends OtherVehicle{
         super(brand, license, type);
 
     }
-
-    public String makeNoise (){
+    @Override
+    public String  vehicleHorn(){
         return "BEEEEP BEEEEP!";
     }
-    @Override
-    public String otherVehicle(){
+    public String makeNoise(){
         return "We are here to load cargos.";
     }
 

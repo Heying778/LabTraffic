@@ -14,15 +14,15 @@ public class SuvTest {
     }
 
     @Test
-    public void canMakeNoise(){
+    public void canVehicleHorn(){
         String expected = "BEEP BEEP!";
-        String actual = suv.makeNoise();
+        String actual = suv.vehicleHorn();
         assertEquals(expected,actual);
     }
     @Test
-    public void canFamilyVehicle(){
+    public void canMakeNoise(){
         String expected = "We are travelling as a bigggg family.";
-        String actual = suv.familyVehicle();
+        String actual = suv.makeNoise();
         assertEquals(expected,actual);
     }
 }

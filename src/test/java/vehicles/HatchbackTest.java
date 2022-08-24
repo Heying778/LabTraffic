@@ -13,15 +13,15 @@ public class HatchbackTest {
     }
 
     @Test
-    public void canMakeNoise(){
+    public void canVehicleHorn(){
         String expected = "BEP BEP!";
-        String actual = hatchback.makeNoise();
+        String actual = hatchback.vehicleHorn();
         assertEquals(expected,actual);
     }
     @Test
-    public void canFamilyVehicle(){
+    public void canMakeNoise(){
         String expected = "I am here with my family.";
-        String actual = hatchback.familyVehicle();
+        String actual = hatchback.makeNoise();
         assertEquals(expected,actual);
     }
 

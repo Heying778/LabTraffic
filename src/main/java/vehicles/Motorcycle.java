@@ -6,12 +6,11 @@ public class Motorcycle extends FamilyVehicle{
         super(brand, license, type);
 
     }
-
-    public String makeNoise (){
+    @Override
+    public String vehicleHorn(){
         return "BP BP!";
     }
-    @Override
-    public String familyVehicle(){
+    public String makeNoise (){
         return "I am here with my partner.";
     }
 

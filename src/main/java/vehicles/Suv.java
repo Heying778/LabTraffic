@@ -6,14 +6,9 @@ public class Suv extends FamilyVehicle{
         super(brand, license, type);
 
     }
-
-    public String makeNoise (){
-        return "BEEP BEEP!";
-    }
     @Override
-
-    public String familyVehicle(){
-        return "We are travelling as a bigggg family.";
+    public String vehicleHorn(){
+        return "BEEP BEEP!";
     }
 
 
